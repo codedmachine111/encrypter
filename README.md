@@ -1,4 +1,4 @@
-# encrypter
+<h1>Encrypter</h1>
 
 This is a webdesign for a website developed for data encryption.
 The website can convert data input by user into an encrypted string.
