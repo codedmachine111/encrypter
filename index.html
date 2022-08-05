@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media/shield.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <link rel="shortcut icon" type="image/x-icon" href="./shield.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./shield.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;500;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,29 +20,19 @@
 </head>
 
 <body>
-    <header>
+    <nav>
         <div class="logo">
-            Encrypter
+            <a href="#"><span id="diff1">E</span>ncrypte<span id="diff2">R</span></a>
         </div>
-    </header>
+    </nav>
     <div class="outer">
         <div class="inner">
-            <div class="title">
-                <div class="txt">
-                    <h2>Secure all your <span id="diff">personal</span> messages</h2>
-
-                </div>
-                <div class="img">
-                    <img src="./encrypter.png" id="img">
-                </div>
-
-            </div>
             <div class="container">
                 <div class="box1">
-                    <form>
+                    <form class="card-front">
                         <div class="box">
                             <textarea style="resize: none" name="text-input" id="text-input" cols="30" rows="10"
-                                placeholder="Enter your message" class="text-input"></textarea>
+                                placeholder="Enter text to encrypt" class="text-input"></textarea>
                             <div class="btn">
                                 <button id="enc-btn" class="enc-btn" type="submit">Encrypt <i class="fas fa-lock"></i>
                                 </button>
@@ -59,7 +49,7 @@
                     <form>
                         <div class="box">
                             <textarea style="resize: none" name="text-input" id="text-input" cols="30" rows="10"
-                                placeholder="Enter your message" class="dec-text-input"></textarea>
+                                placeholder="Enter text to decrypt" class="dec-text-input"></textarea>
                             <div class="btn">
                                 <button id="enc-btn" class="dec-btn" type="submit">Decrypt <i
                                         class="fas fa-lock-open"></i> </button>
