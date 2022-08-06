@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="./style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" type="image/x-icon" href="./media/shield.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;500;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" type="image/x-icon" href="./media/shield.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;500;600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>Encrypter- Secure Your Messages</title>
@@ -30,46 +30,41 @@
             <div class="container">
                 <div class="box1">
                     <form class="card-front">
-                        <div class="box">
-                            <textarea style="resize: none" name="text-input" id="text-input" cols="30" rows="10"
-                                placeholder="Enter text to encrypt" class="text-input"></textarea>
-                            <div class="btn">
-                                <button id="enc-btn" class="enc-btn" type="submit">Encrypt <i class="fas fa-lock"></i>
-                                </button>
-                            </div>
-
-                        </div>
+                        <textarea style="resize: none" name="text-input" id="text-input" cols="30" rows="10"
+                            placeholder="Enter text to encrypt" class="text-input"></textarea>
+                        <p class="pass">Enter a password :</p>
+                        <input type="password" id="password" class="password" placeholder="password" />
+                        <button id="enc-btn" class="enc-btn" type="submit">
+                            Encrypt <i class="fas fa-lock"></i>
+                        </button>
                     </form>
-                    <div class="encryptedmsg">
-
-                    </div>
+                    <div class="encryptedmsg"></div>
                 </div>
-                <hr id="line2">
+                <hr id="line2" />
                 <div class="box2">
                     <form>
-                        <div class="box">
-                            <textarea style="resize: none" name="text-input" id="text-input" cols="30" rows="10"
-                                placeholder="Enter text to decrypt" class="dec-text-input"></textarea>
-                            <div class="btn">
-                                <button id="enc-btn" class="dec-btn" type="submit">Decrypt <i
-                                        class="fas fa-lock-open"></i> </button>
-                            </div>
-
-                        </div>
+                        <textarea style="resize: none" name="text-input" id="text-input" cols="30" rows="10"
+                            placeholder="Enter text to decrypt" class="dec-text-input"></textarea>
+                        <p class="pass2">Enter a password :</p>
+                        <input type="password" id="password2" class="password" placeholder="password" />
+                        <button id="enc-btn" class="dec-btn" type="submit">
+                            Decrypt <i class="fas fa-lock-open"></i>
+                        </button>
                     </form>
-                    <div class="decryptedmsg">
-
-                    </div>
+                    <div class="decryptedmsg"></div>
                 </div>
             </div>
         </div>
-
     </div>
     <footer class="footer">
-        <p>Designed by <a href="https://github.com/codedmachine111">codedmachine111</a></p>
+        <p>
+            Designed by
+            <a href="https://github.com/codedmachine111">codedmachine111</a>
+        </p>
     </footer>
 
     <script src="./app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 </body>
 
 </html>
